@@ -1,0 +1,40 @@
+footer {
+	height: 300px;
+	width: 100%;
+	background-color:#0302FF;
+	color:#fff;
+	font-family: "Work Sans", sans-serif;
+	font-size: 15px;
+	>div {
+		position: relative;
+		top: 140px;
+		float: left;
+		margin-left: 220px;
+	}
+	.social-media {
+		width: 200px;
+		.tile {
+			float:left;
+			width: 40px;
+			height:40px;
+			background-color:rgba(255,255,255,0.0);
+
+			&:hover {
+				background-color:rgba(255,255,255,1);
+				.social-media-icon {
+					filter: initial;
+				}
+			}			
+			.social-media-icon {
+				display: block;
+				text-indent: -9999999px;
+				margin: 0 auto;
+				margin-top: 10px;
+			}
+			.icon-twitter {background:url('../../assets/images/social-media/twitter.svg') no-repeat; width: 15px; height: 15px; filter: brightness(0) invert(1);}
+			.icon-facebook {background:url('../../assets/images/social-media/facebook.svg') no-repeat; width: 8px; height: 15px; filter: brightness(0) invert(1);}
+			.icon-instagram {background:url('../../assets/images/social-media/instagram.svg') no-repeat; width: 15px; height: 15px; filter: brightness(0) invert(1);}
+			.icon-vimeo {background:url('../../assets/images/social-media/vimeo.svg') no-repeat; width: 15px; height: 15px; filter: brightness(0) invert(1);}
+		}
+	}
+}
