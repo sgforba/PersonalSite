@@ -79,6 +79,7 @@ footer {
       footer .social-media .tile:hover {
         background-color: white; }
         footer .social-media .tile:hover .social-media-icon {
+          -webkit-filter: initial;
           filter: initial; }
       footer .social-media .tile .social-media-icon {
         display: block;
@@ -89,21 +90,25 @@ footer {
         background: url("../../assets/images/social-media/twitter.svg") no-repeat;
         width: 15px;
         height: 15px;
+        -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1); }
       footer .social-media .tile .icon-facebook {
         background: url("../../assets/images/social-media/facebook.svg") no-repeat;
         width: 8px;
         height: 15px;
+        -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1); }
       footer .social-media .tile .icon-instagram {
         background: url("../../assets/images/social-media/instagram.svg") no-repeat;
         width: 15px;
         height: 15px;
+        -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1); }
       footer .social-media .tile .icon-vimeo {
         background: url("../../assets/images/social-media/vimeo.svg") no-repeat;
         width: 15px;
         height: 15px;
+        -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1); }
 
 .clear:after {
