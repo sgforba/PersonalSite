@@ -1,0 +1,22 @@
+#testimonials {
+    background-color: #f4f4f4;
+    .centered {
+        padding-top: 144px;
+        h1 {
+            text-align: center;
+        }
+        ul {
+            width: 38%;
+            margin: 0 auto;
+
+            li {
+                h3 {
+                    text-align: center;
+                }
+                h4 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
