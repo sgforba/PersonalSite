@@ -1,4 +1,7 @@
 #about {
+	.centered {
+		width: 60%;
+	}
 	height: 712px;
 	background:#ffffff;
 	font-family: 'Montserrat', Arial, sans-serif;
@@ -16,7 +19,7 @@
 		color:#444444;	
 	}
 	.about-content {
-		width: 50%;
+		width: 100%;
 		position: relative;
 		top:200px;
 		margin: 0 auto;
