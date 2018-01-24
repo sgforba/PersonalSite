@@ -1,21 +1,27 @@
 #testimonials {
     background-color: #f4f4f4;
     .centered {
-        padding-top: 144px;
-        h1 {
-            text-align: center;
-        }
-        ul {
-            width: 38%;
-            margin: 0 auto;
-
-            li {
-                h3 {
+        padding: 144px 0px 144px 0px;
+        .swiper-container {
+            width: 60%;
+            .swiper-wrapper {
+                h1 {
                     text-align: center;
+                    padding-bottom: 45px;
                 }
-                h4 {
-                    text-align: center;
-                }
+                ul {
+                    width: 38%;
+                    margin: 0 auto;
+        
+                    li {
+                        h3 {
+                            text-align: center;
+                        }
+                        h4 {
+                            text-align: center;
+                        }
+                    }
+                }        
             }
         }
     }

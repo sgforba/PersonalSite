@@ -223,39 +223,39 @@ header {
           background: #ffffff;
           border: 2px solid #ffffff; }
 
-#skills {
-  overflow: auto; }
-  #skills .centered {
-    overflow: auto;
-    width: 1080px;
-    margin-top: 144px;
-    margin-bottom: 144px; }
-    #skills .centered .skill {
-      width: 25%;
-      float: left;
-      text-align: justify;
-      margin-right: 5%;
-      margin-top: 20px; }
-      #skills .centered .skill .skill-icon {
-        display: block;
-        text-indent: -10000px; }
-      #skills .centered .skill h4 {
-        text-align: center;
-        margin-bottom: 5px; }
+#skills .centered {
+  width: 1080px;
+  margin-top: 144px;
+  margin-bottom: 144px; }
+  #skills .centered .skill {
+    width: 25%;
+    float: left;
+    text-align: justify;
+    margin-right: 5%;
+    margin-top: 20px; }
+    #skills .centered .skill .skill-icon {
+      display: block;
+      text-indent: -10000px; }
+    #skills .centered .skill h4 {
+      text-align: center;
+      margin-bottom: 5px; }
 
 #testimonials {
   background-color: #f4f4f4; }
   #testimonials .centered {
-    padding-top: 144px; }
-    #testimonials .centered h1 {
-      text-align: center; }
-    #testimonials .centered ul {
-      width: 38%;
-      margin: 0 auto; }
-      #testimonials .centered ul li h3 {
-        text-align: center; }
-      #testimonials .centered ul li h4 {
-        text-align: center; }
+    padding: 144px 0px 144px 0px; }
+    #testimonials .centered .swiper-container {
+      width: 60%; }
+      #testimonials .centered .swiper-container .swiper-wrapper h1 {
+        text-align: center;
+        padding-bottom: 45px; }
+      #testimonials .centered .swiper-container .swiper-wrapper ul {
+        width: 38%;
+        margin: 0 auto; }
+        #testimonials .centered .swiper-container .swiper-wrapper ul li h3 {
+          text-align: center; }
+        #testimonials .centered .swiper-container .swiper-wrapper ul li h4 {
+          text-align: center; }
 
 /**
  * Swiper 4.1.0
