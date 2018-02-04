@@ -14,5 +14,20 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		color:#ffffff;
+		letter-spacing: 15px;
+	}
+	.scroll-down {
+		display: block;
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		cursor: pointer;
+		text-indent: -99999px;
+		background-image: url('../../assets/images/scroll_down.png');
+		width: 84px;
+		height: 47px;
+
 	}
 }

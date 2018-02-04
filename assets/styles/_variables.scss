@@ -1,21 +1,16 @@
-$mobile-break: 728px;
-$tablet-break: 1439px;
-$image-column-width: 695px;
-$image-column-width-tablet: 48%;
-$image-column-height-small-tablet: $image-column-width-tablet * 0.67;
-
-@function calc-image-height ($value1) {
-  @return $value1 * 0.67;
-}
+$mobile-break: 768px;
+$tablet-break: 1024px;
+$laptop-break: 1224px;
+$large-break: 1824px;
 
 
 @mixin breakpoint($point) {
    @if $point == tablet {
      @media (min-width: $mobile-break) and (max-width: $tablet-break) { @content ; }
   }
- 
   @else if $point == mobile {
       @media (max-width: $mobile-break) { @content ; }
 
   }
+
 }

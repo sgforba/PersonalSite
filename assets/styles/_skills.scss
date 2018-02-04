@@ -14,10 +14,25 @@
             .skill-icon {
                 display: block;
                 text-indent: -10000px;
+                &.icon-html {
+                    background-image: url('../../assets/images/html5.png?v=1');
+                    width: 44px;
+                    height: 50px;
+                    margin: 0 auto;
+                } 
+                &.icon-css {
+                    background-image: url('../../assets/images/css3.png?v=1');
+                    width: 45px;
+                    height: 50px;
+                    margin: 0 auto;
+                }                                 
             }
             h4 {
                 text-align: center;
                 margin-bottom: 5px;                
+            }
+            .skill-icon {
+
             }
         }
     }
