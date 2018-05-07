@@ -2,158 +2,194 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Scott Forba</title>		
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
 	<link rel="stylesheet" href="assets/styles/reset.css?v=1.0">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="assets/styles/styles.css?v=1.0">	
+
+	<title>Scott Forba - Web Dev</title>	
 </head>
 <body>
-<header class="centered clear">
-		
-		<nav class="clear">
-			<a href="">
-				Home
-			</a>	
-			<a href="">
-				About
-			</a>
-			<a href="">
-				Portfolio
-			</a>
-			<a href="">
-				Technology
-			</a>
-			<a href="">
-				Testimonials
-			</a>								
-			<a href="">
-				Contact
-			</a>											
-		</nav>	
-</header>
-<div id="hero">
+<div class="header-nav" >
+	<nav class="desktop-nav">
+		<a href="#hero" class="home-link nav-link">
+			Home
+		</a>	
+		<a href="#about" class="about-link nav-link">
+			About
+		</a>
+		<a href="#portfolio" class="portfolio-link nav-link">
+			Portfolio
+		</a>
+		<a href="#skills" class="tech-link nav-link">
+			Technology
+		</a>
+		<a href="#stay-connected" class="contact-link nav-link">
+			Contact
+		</a>											
+	</nav>	
+</div>
+<img src="./assets/images/hamburger.svg" class="hamburger">
+<nav class="mobile-nav">
+	<a href="#hero">
+		Home
+	</a>	
+	<a href="#about">
+		About
+	</a>
+	<a href="#portfolio">
+		Portfolio
+	</a>
+	<a href="#skills">
+		Technology
+	</a>
+	<a href="#stay-connected">
+		Contact
+	</a>											
+</nav>	
+<div id="hero" class="page">
 	<h1>Scott Forba</h1>
-	<a class="scroll-down" href="#">Click Here</a>
+	<div class="slick-container">
+		<div class="slick-image image-1"><img src="./assets/images/hero-images/lic1.jpg"></div>
+		<div class="slick-image image-2"><img src="./assets/images/hero-images/lic2.jpg"></div>
+		<div class="slick-image image-3"><img src="./assets/images/hero-images/nepa1.jpg"></div>
+	</div>
+	<a class="scroll-down" href="#about">Click Here</a>
 </div>	
-<div id="about">
+<div id="about" class="page">
 	<div class="centered">
 		<h2>About me</h2>
-		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 		<div class="about-content">
 			<p class="lead">
-				Hello, I'm Scott Forba. Creative designer, developer and sometimes photographer.
+				Hello, I'm Scott Forba. I am a web developer based out of Long Island City in Queens, New York.
 			</p>
 			<p>
-				Curabitur tincidunt enim eros, sit amet bibendum nisl pellentesque et. Suspendisse sit amet lacus sagittis, vestibulum augue eget, egestas lacus. Vestibulum et dolor non quam tincidunt tincidunt. Maecenas vestibulum augue eget lacus lobortis, at elementum erat suscipit. 
-			</p>	
+				I have been
 			<p>
 				Curabitur tincidunt enim eros, sit amet bibendum nisl pellentesque et. Suspendisse sit amet lacus sagittis, vestibulum augue eget, egestas lacus. Vestibulum et dolor non quam tincidunt tincidunt. Maecenas vestibulum augue eget lacus lobortis, at elementum erat suscipit. 
 			</p>
 		</div>			
 	</div>		
 </div>	
-<div id="portfolio">
+<div id="portfolio" class="page">
+	<h1>PROJECTS</h1>
 	<div class="projects">
 		<div class="work work-1">
-			<div class="overlay">
-				Project Name
-			</div>
+			<a class="overlay" href="https://www.newzspace.com" target="_blank">
+				<span class="overlay-title">NewzHub</span><br>
+				<span class="overlay-descr">
+					An interactive RSS Scraper and News Aggregator buiilt with React, Express, Nodejs, and MongoDB
+				</span>
+			</a>
 		</div>	
 		<div class="work work-2">
-			<div class="overlay">
-				Project Name
-			</div>
+			<a class="overlay" target="_blank" href="https://translationrun.herokuapp.com">
+				<span class="overlay-title">Translator</span><br>
+				<span class="overlay-descr">
+					A translator built with Vue.js, Bootstrap, and the Yandex API.
+				</span>
+			</a>
 		</div>	
 		<div class="work work-3">
-			<div class="overlay">
-				Project Name
-			</div>
+			<a class="overlay" href="https://github.com/sgforba" target="_blank">
+				<span class="overlay-title">Check out more on my Github!</span><br>
+				
+			</a>
 		</div>	
-		<div class="work work-4">
-			<div class="overlay">
-				Project Name
-			</div>
-		</div>	
-		<div class="work work-5">
-			<div class="overlay">
-				Project Name
-			</div>
-		</div>
-		<div class="work work-6">
-			<div class="overlay">
-				Project Name
-			</div>
-		</div>										
 	</div>
-	<div class="contact-cta">
-		<div class="centered clear">
 
-			<span>Work better. Start working together</span>
-			<a class="button">Contact Me</a>
-		</div>
-	</div>	
 </div>
 
-<div id="skills" class="clear">
+<div id="skills" class="clear page">
+	<h1>Technologies I Use:</h1>
 	<div class="centered clear">
-		<div class="skill skill-js">
+		<div class="skill skill-1">
 			<span class="skill-icon icon-html">HTML</span>
 			<h4>
 				HTML
 			</h4>
-			<p>
+			<!-- <p>
 			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
-			</p>
+			</p> -->
 		</div>
 		<div class="skill skill-2">
-				<span class="skill-icon icon-css">CSS</span>
-				<h4>
-					CSS
-				</h4>
-				<p>
-				Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
-				</p>
+			<span class="skill-icon icon-css">CSS</span>
+			<h4>
+				CSS
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
 		</div>
 		<div class="skill skill-3">
-				<span class="skill-icon icon-js">JavaScript</span>
-				<h4>
-					JavaScript
-				</h4>
-				<p>
-				Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
-				</p>
+			<span class="skill-icon icon-js">JavaScript</span>
+			<h4>
+				JavaScript
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
 		</div>
 		<div class="skill skill-4">
-				<span class="skill-icon icon-js">JavaScript</span>
-				<h4>
-					JavaScript
-				</h4>
-				<p>
-				Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
-				</p>
+			<span class="skill-icon icon-jq">WordPress</span>
+			<h4>
+				Jquery
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
 		</div>
 		<div class="skill skill-5">
-				<span class="skill-icon icon-js">JavaScript</span>
-				<h4>
-					JavaScript
-				</h4>
-				<p>
-				Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
-				</p>
+			<span class="skill-icon icon-sass">Angular</span>
+			<h4>
+				SASS
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
 		</div>
 		<div class="skill skill-6">
-				<span class="skill-icon icon-js">JavaScript</span>
-				<h4>
-					JavaScript
-				</h4>
-				<p>
-				Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
-				</p>
-		</div>													
+			<span class="skill-icon icon-react">React</span>
+			<h4>
+				React
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
+		</div>	
+		<div class="skill skill-7">
+			<span class="skill-icon icon-vue">React</span>
+			<h4>
+				Vue.js
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
+		</div>	
+		<div class="skill skill-8">
+			<span class="skill-icon icon-mongo">React</span>
+			<h4>
+				MongoDB
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
+		</div>	
+		<div class="skill skill-9">
+			<span class="skill-icon icon-node">React</span>
+			<h4>
+				Nodejs
+			</h4>
+			<!-- <p>
+			Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis, blandit enim.
+			</p> -->
+		</div>																			
 	</div>		
 
 	</div>
 </div>
-<div id="testimonials">
+<!-- <div id="testimonials"  class="page">
 	<div class="centered">
 		
 		<div class="swiper-container">
@@ -179,42 +215,34 @@
 			<div class="swiper-button-next"></div>					
 		</div>		
 	</div>	
-</div>
+</div> -->
 
-<div id="stay-connected">
+<div id="stay-connected"  class="page">
 	<div class="centered">
 		<div class="sc-intro">
-			<h1>Get in Touch</h1>
-			<p>Sed consectetur, elit eu sodales pellentesque, nulla magna pretium eros, </p>
+			<h1>Get in Touch!</h1>
+			<p>Have a project idea? Need a Website?</p>
+			<p>Fill out the form below to get started:</p>
 		</div>
-		<div class="contact-info clear">
-			<div class="phone">
-				<span class="phone-icon">Phone</span>
-				<h2>Telephone</h2>
-				<a>(555) 555-5555</a>
-			</div>
-			<div class="email">
-				<span class="email-icon">Email</span>
-				<h2>Telephone</h2>
-				<a>(555) 555-5555</a>
-			</div>			
-		</div>
+
 		<div class="form-wrapper">
-			<form method="" action="" id="email-form">
+			<form method="post" action="assets/scripts/form.php" id="email-form">
 				<fieldset>
 					<input type="text" name="name" id="name" placeholder="Name">
 					<input type="text" name="email" id="email" placeholder="Email" id="email">
 					<input type="text" name="subject" id="subject" placeholder="Subject">
-					<input type="text" name="message" id="message" placeholder="Message">				
+					<textarea type="text" name="message" id="message" placeholder="Message"></textarea>				
 				</fieldset>
 				<fieldset><button>Send Message</button></fieldset>
 			</form>
 		</div>
+
 	</div>	
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/scripts/swiper.js"></script>	
-<script src="assets/scripts/scripts.js"></script>
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/scripts/scripts.js"></script>
 </html>

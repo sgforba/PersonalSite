@@ -1,29 +1,47 @@
 #stay-connected {
+    min-height: 100vh;
+    background: #57d1c9;
+    font-family: 'Montserrat', Arial, sans-serif;
+	@include breakpoint(mobile) {
+        min-height: 1px;
+        position: absolute;
+     }		
+     fieldset {
+         width: 100%;
+     }    
     .centered {
-        margin-top: 100px;
-        margin-bottom: 100px;
+        padding-top: 50px;
         width: 750px;
         text-align: center;
+        @include breakpoint(mobile) {
+            width: 100%;
+            padding-top: 30px;
+        }	        
         .sc-intro {
             h1 {
-                font-size: 16px;
+                font-size: 28px;
+                font-weight: bold;
                 padding-bottom: 20px;
             }
             p {
-                margin-bottom: 90px;
+                font-size: 18px;
+                margin-bottom: 10px;
             }
 
         }
         .contact-info {
-            width: 30%;
+            font-size: 22px;
             margin: 0 auto;
             padding-bottom: 50px;
-            div {
-                width: 110px;
-                float: left;
+            .email-link {
+                color: #ffffff;
+                padding-top: 20px;             
             }
         }
         .form-wrapper { 
+            @include breakpoint(mobile) {
+                padding-bottom: 30px;
+            }
             #email-form {
                 input[type="text"]{
                     border: 2px solid #cccccc;
@@ -31,6 +49,10 @@
                     height: 40px;
                     width: 356px;
                     float: left;
+                    @include breakpoint(mobile) {
+                        width: 90%;
+                        float: none;
+                    }	                    
                 }
                 input::placeholder {
                     color: #cccccc;
@@ -38,30 +60,44 @@
                   }
                 #email {
                     margin-left: 30px;
-                   
+                    @include breakpoint(mobile) {
+                        margin-left: 0px;
+                        margin-top: 12px;
+                    }	                   
                 }
                 #subject {
                     margin-top: 12px;
                     width: 100%;
                     clear:right;
+                    @include breakpoint(mobile) {
+                        width: 90%;
+                        
+                    }                    
                 }  
-                #message {
+                textarea {
+                    border: 2px solid #cccccc;
+                    border-radius: 5px;        
                     width: 100%;
                     margin-top: 12px;
-                    height:198px;                  
+                    height:198px;     
+                    @include breakpoint(mobile) {
+                        width: 90%;
+                      
+                    }                                 
                 } 
-                #message::placeholder {
-                
+                textarea::placeholder {
+                    color: #cccccc;
+                    padding-left: 12px;    
+                    font-family: 'Montserrat', Arial, sans-serif;           
                      
                 }                 
                 button{
                     margin-top: 10px;
-                    float: left;
                     width: 186px;
                     height: 48px;
-                    color:#57d1c9;
+                    color:#ffffff;
                     background: transparent;
-                    border: 2px solid #57d1c9;
+                    border: 2px solid #ffffff;
                     border-radius: 4px;
                     font-size: 14px;
                 }                           

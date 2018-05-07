@@ -1,32 +1,88 @@
-header {
-	position: relative;
-	top: 45px;
+.header-nav {
+	position: fixed;
+	top: 50px;
+	height: 50px;
 	z-index: 2;
 	font-family: 'Montserrat', Arial, sans-serif;
 	width: 100%;
-	.logo {
-		float: left;
-		margin-left: 20%;
-		font-size:18px;
-		color:#ffffff;
-	}
-	nav {
-		width: 1180px;
+	
+	.desktop-nav {
+		height: 50px;
+		line-height: 50px;
+		width: 100%;
 		font-size:20px;
 		position: absolute;
 		left: 0;
 		right: 0;
-		margin: auto;			
+		display: flex;
+		justify-content: space-evenly;
+		transition: background-color 0.5s;	
+		&.scrolled {
+			background-color: rgba(23, 160, 150, 0.8);
+		}				
 		a {
-			margin-left: 5%;
-			display: block;
-			float: left;
 			color: #fff;
 			text-decoration: none;
 			text-transform: uppercase;
 			&:hover {
-				color:#57d1c9;
+				color:#82E4DD;
 			}
 		}
+		@include breakpoint(mobile) {
+			display: none;
+		}		
 	}
+}
+.hamburger {
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	right: 25px; 
+	top:25px; 
+	display: none;
+	cursor:pointer;
+	z-index: 20;
+	stroke: #ffffff;
+	@include breakpoint(mobile) {
+		display: block;
+	}	
+	&.active {
+		stroke: #82E4DD !important;
+	}	
+}
+
+.mobile-nav {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	background-color: rgba(23, 160, 150, 0.9);
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	z-index: 19;
+	padding-top: 200px;
+	transition: left 0.3s ease-out;
+	a {
+		margin-bottom: 20px;
+		font-family: 'Montserrat', Arial, sans-serif;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 30px;
+		display: block;		
+		text-align: center;
+		width: 100%;
+
+		&:hover {
+			color:#82E4DD;
+			
+		}		
+	}
+	@include breakpoint(mobile) {
+		display: block;
+	}	
+	&.active {
+		left: 0;
+	}	
 }

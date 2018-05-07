@@ -6,10 +6,10 @@ $large-break: 1824px;
 
 @mixin breakpoint($point) {
    @if $point == tablet {
-     @media (min-width: $mobile-break) and (max-width: $tablet-break) { @content ; }
+     @media screen and (min-width: $mobile-break + 1) and (max-width: $tablet-break) { @content ; }
   }
   @else if $point == mobile {
-      @media (max-width: $mobile-break) { @content ; }
+      @media screen and (max-width: $mobile-break) { @content ; }
 
   }
 

@@ -1,38 +1,54 @@
 #skills {
-
+    min-height: 80vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        padding: 50px 0px 30px 0px;
+    }
     .centered {
-
-        width: 1080px;
-        margin-top: 144px;
-        margin-bottom: 144px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 1.5em;
+        grid-column-gap: 1.25em;
+        width: 80%;
+        padding-bottom: 20px;
+		@include breakpoint(mobile) {
+			grid-template-columns: repeat(2,1fr);
+		}        
         .skill {
-            width: 25%;
-            float: left;
-            text-align: justify;
-            margin-right: 5%;
-            margin-top: 20px;
+            
             .skill-icon {
+                text-decoration: none;
                 display: block;
                 text-indent: -10000px;
-                &.icon-html {
-                    background-image: url('../../assets/images/html5.png?v=1');
-                    width: 44px;
-                    height: 50px;
-                    margin: 0 auto;
-                } 
-                &.icon-css {
-                    background-image: url('../../assets/images/css3.png?v=1');
-                    width: 45px;
-                    height: 50px;
-                    margin: 0 auto;
-                }                                 
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 110px;
+                margin: 0 auto;
+                margin-bottom: 10px; 
+                background-position-x: 50%;
+                &.icon-html {background-image: url('../../assets/images/tech-logo/html.png?v=1');} 
+                &.icon-css { background-image: url('../../assets/images/tech-logo/css.png?v=1');}
+                &.icon-js { background-image: url('../../assets/images/tech-logo/js.png?v=1');} 
+                &.icon-jq { background-image: url('../../assets/images/tech-logo/jquery.png?v=1');} 
+                &.icon-sass { background-image: url('../../assets/images/tech-logo/sass.png?v=1');} 
+                &.icon-wp { background-image: url('../../assets/images/tech-logo/wp.png?v=1');} 
+                &.icon-angular { background-image: url('../../assets/images/tech-logo/angular.png?v=1');} 
+                &.icon-react { background-image: url('../../assets/images/tech-logo/react.png?v=1');}   
+                &.icon-mongo { background-image: url('../../assets/images/tech-logo/mongo.png?v=1');}   
+                &.icon-vue { background-image: url('../../assets/images/tech-logo/vue.png?v=1');}   
+                &.icon-node { background-image: url('../../assets/images/tech-logo/node.png?v=1');}   
+                                              
             }
             h4 {
                 text-align: center;
-                margin-bottom: 5px;                
+                margin-bottom: 10px; 
+                font-weight: bold;               
             }
-            .skill-icon {
-
+            p {
+                font-size: 13px;
             }
         }
     }

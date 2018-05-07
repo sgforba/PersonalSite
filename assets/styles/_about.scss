@@ -1,27 +1,31 @@
 #about {
+	min-height: 40vh;
+	@include breakpoint(mobile) {
+		min-height: 1px;
+	}		
 	.centered {
 		width: 60%;
+		@include breakpoint(mobile) {
+			width: 90%;
+		}			
 	}
-	height: 712px;
 	background:#ffffff;
 	font-family: 'Montserrat', Arial, sans-serif;
 	h2 {
 		text-align: center;		
-		position: relative;
-		top: 150px;
-		font-size: 25px;
+		padding-top: 50px;
+		font-size: 28px;
+		font-weight: bold;
+		padding-bottom: 10px;
 	}
 	h4 {
 		text-align: center;		
-		position: relative;
-		top: 175px;	
 		font-size:16px;
 		color:#444444;	
 	}
 	.about-content {
 		width: 100%;
-		position: relative;
-		top:200px;
+
 		margin: 0 auto;
 		text-align: justify;
 		color:#444444;
