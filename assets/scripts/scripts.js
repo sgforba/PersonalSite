@@ -63,7 +63,6 @@ $('.scroll-down').on('click', function(event) {
     }   
 });
 
-
 hamburger.on('click', function() {
     $(this).addClass('active');
     var classCheck = mobileNav.hasClass('active');

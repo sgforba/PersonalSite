@@ -14,8 +14,12 @@
 		position: absolute;
 		left: 0;
 		right: 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		transition: background-color 0.5s;	
 		&.scrolled {
 			background-color: rgba(23, 160, 150, 0.8);
