@@ -50,6 +50,18 @@ $('.header-nav a[href^="#"]').on('click', function(event) {
     }   
 });
 
+$('.scroll-down').on('click', function(event) {
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {    
+        event.preventDefault();
+        target[0].id != 'home' ? header.addClass("scrolled") :  header.removeClass("scrolled");
+        var scrollPosition = target.offset().top-50;
+        $('html, body').animate({
+            scrollTop: scrollPosition
+        }, 300);     
+    }   
+});
 
 
 hamburger.on('click', function() {
