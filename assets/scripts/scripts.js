@@ -65,6 +65,7 @@ $('.scroll-down').on('click', function(event) {
 
 hamburger.on('click', function() {
     $(this).addClass('active');
+    $(this).toggleClass('open');
     var classCheck = mobileNav.hasClass('active');
     classCheck === true ? mobileNav.removeClass('active'): mobileNav.addClass('active');   
 })
@@ -81,5 +82,7 @@ $('.mobile-nav a[href^="#"]').on('click', function(event) {
         }, 300);     
     }   
 });
+
+
 
 })();
